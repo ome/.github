@@ -5,7 +5,4 @@
     "categories": [
         "Python"
     ],
-    "filePatterns": [
-        "setup.py$",
-    ]
 }
