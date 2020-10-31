@@ -4,5 +4,8 @@
     "iconName": "python",
     "categories": [
         "Python"
+    ],
+    "filePatterns": [
+        "setup.py$"
     ]
 }
