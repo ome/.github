@@ -1,0 +1,5 @@
+{
+    "name": "Install and test an OMERO plugin",
+    "description": "Install a plugin and run tests against an OMERO environment.",
+    "iconName": "omero"
+}
