@@ -1,6 +1,9 @@
-##Python Package Release Process
+##Release Process
 
-Release project for Python package. `bump2version <https://pypi.org/project/bump2version/>`_ is used to manage version numbers.
+Relase Python package
+=====================
+
+We use `bump2version <https://pypi.org/project/bump2version/>`_ to manage version numbers.
 To tag a release run::
 
     $ bumpversion release
