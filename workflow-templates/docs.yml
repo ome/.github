@@ -1,7 +1,7 @@
 # Builds the Sphinx documentation in the docs folder
 
 ---
-name: docs
+name: sphinx
 
 on: 
   push:
