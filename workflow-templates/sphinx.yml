@@ -13,14 +13,31 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-	defaults:
-	  run:
-	    working-directory: ./docs
+    env: 
+      directory_path: ${{ secrets.directory_path }}
+      check_link: ${{ secrets.check_link }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - name: Sphinx install
         run: pip install --upgrade sphinx
+      - name: Set directory
+        run: echo "docs_dir=./docs" >> $GITHUB_ENV
+        if: ${{ env.directory_path == '' }}
+      - name: Set directory
+        run: echo "docs_dir="${{ env.directory_path }} >> $GITHUB_ENV
+        if: ${{ env.directory_path != '' }}
+      - name: Set linkcheck option
+        run: echo "link=true" >> $GITHUB_ENV
+        if: ${{ env.check_link == '' }}
+      - name: Set linkcheck option
+        run: echo "link=false" >> $GITHUB_ENV
+        if: ${{ env.check_link != '' }}
       - name: Build doc
         run: |
-		  make clean html linkcheck
+          cd $docs_dir
+          if [ "$link" = true ]; then
+            make clean html linkcheck
+          else
+            make clean html
+          fi 
