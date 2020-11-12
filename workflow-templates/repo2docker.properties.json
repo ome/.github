@@ -1,0 +1,8 @@
+{
+    "name": "Turn repository into a Docker image",
+    "description": "Turn a repository into Docker image using the Python library repo2docker.",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ]
+}
