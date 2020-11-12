@@ -1,5 +1,8 @@
 # Builds the Sphinx documentation in the specified folder.
-# Default is docs/
+# Default values are docs/ for the directory where the Sphinx
+# documentation is located and true to run linkcheck
+# To pass a new folder, set directory_path to the folder path
+# To disable linkcheck, set check_link to any value 
 
 ---
 name: sphinx
@@ -40,4 +43,4 @@ jobs:
             make clean html linkcheck
           else
             make clean html
-          fi 
+          fi
