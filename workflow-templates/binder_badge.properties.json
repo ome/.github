@@ -1,4 +1,5 @@
 {
     "name": "Add binder when PR is opened/reopened",
-    "description": "Add a badge to launch in mybinder.org."
+    "description": "Add a badge to launch in mybinder.org.",
+	"iconName": "binder",
 }
