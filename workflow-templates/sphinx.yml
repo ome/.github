@@ -17,8 +17,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      directory_path: ${{ secrets.directory_path }}
-      check_link: ${{ secrets.check_link }}
+      directory_path:
+      check_link: true # set to false to remove linkcheck
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -30,16 +30,10 @@ jobs:
       - name: Set directory
         run: echo "docs_dir="${{ env.directory_path }} >> $GITHUB_ENV
         if: ${{ env.directory_path != '' }}
-      - name: Set linkcheck option
-        run: echo "link=true" >> $GITHUB_ENV
-        if: ${{ env.check_link == '' }}
-      - name: Set linkcheck option
-        run: echo "link=false" >> $GITHUB_ENV
-        if: ${{ env.check_link != '' }}
       - name: Build doc
         run: |
           cd $docs_dir
-          if [ "$link" = true ]; then
+          if [ "${{ env.check_link }}" = true ]; then
             make clean html linkcheck
           else
             make clean html
