@@ -25,11 +25,9 @@ jobs:
       - name: Sphinx install
         run: pip install --upgrade sphinx
       - name: Set directory
-        run: echo "docs_dir=./docs" >> $GITHUB_ENV
-        if: ${{ env.directory_path == '' }}
-      - name: Set directory
-        run: echo "docs_dir="${{ env.directory_path }} >> $GITHUB_ENV
-        if: ${{ env.directory_path != '' }}
+        run:  |
+		  VAR=${{ env.directory_path }}
+		  echo "docs_dir="${VAR:-./docs} >> $GITHUB_ENV
       - name: Build doc
         run: |
           cd $docs_dir
