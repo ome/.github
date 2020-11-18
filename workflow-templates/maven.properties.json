@@ -1,0 +1,8 @@
+{
+    "name": "Build using Maven",
+    "description": "Build using Maven.",
+    "iconName": "maven",
+    "categories": [
+        "Maven POM"
+    ]
+}
