@@ -1,0 +1,11 @@
+{
+    "name": "Build using Gradle",
+    "description": "Build using Gradle, by default version 5.2.1 is used.",
+    "iconName": "gradle",
+    "categories": [
+        "Gradle"
+    ],
+    "filePatterns": [
+        "build.gradle$"
+    ]
+}
