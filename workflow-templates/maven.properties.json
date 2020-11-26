@@ -4,5 +4,8 @@
     "iconName": "maven",
     "categories": [
         "Maven POM"
+    ],
+    "filePatterns": [
+        "pom.xml$"
     ]
 }
