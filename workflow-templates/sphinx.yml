@@ -2,7 +2,7 @@
 # Default values are docs/ for the directory where the Sphinx
 # documentation is located and true to run linkcheck
 # To pass a new folder, set directory_path to the folder path
-# To disable linkcheck, set check_link to any value 
+# Pass the arguments you wish to run, default command is make clean html linkcheck
 
 ---
 name: sphinx
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       directory_path:
-      check_link: true # set to false to remove linkcheck
+      sphinx_commands: clean html linkcheck # commands to run. Update accordingly
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -31,8 +31,4 @@ jobs:
       - name: Build doc
         run: |
           cd $docs_dir
-          if [ "${{ env.check_link }}" = true ]; then
-            make clean html linkcheck
-          else
-            make clean html
-          fi
+          make ${{ env.sphinx_commands }}
