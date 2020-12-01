@@ -1,5 +1,5 @@
 # Builds using maven
-
+# Pass the arguments you wish to run to maven_commands variable, default command will be mvn install
 ---
 name: Maven
 
@@ -16,6 +16,8 @@ jobs:
         java: [1.8, 11]
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
+    env:
+      maven_commands: install # default is install
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK ${{ matrix.java }}
@@ -29,4 +31,4 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Build
-        run: mvn install
+        run: mvn ${{ env.maven_commands }}
