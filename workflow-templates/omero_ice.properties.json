@@ -1,0 +1,5 @@
+{
+    "name": "Builds Zeroc Ice",
+    "description": "Ice 3.6 is built from source and a wheel can be created.",
+    "iconName": "omero"
+}
