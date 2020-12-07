@@ -1,0 +1,11 @@
+{
+    "name": "Run tox tests",
+    "description": "Run tox tests.",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ],
+    "filePatterns": [
+        "tox.ini$"
+    ]
+}
