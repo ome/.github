@@ -1,0 +1,8 @@
+{
+    "name": "Build Sphinx documentation",
+    "description": "Build Sphinx documentation contained in the /docs folder.",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ]
+}
