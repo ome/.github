@@ -30,11 +30,21 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
       - name: Wrap with specified version
-        run: gradle wrapper --gradle-version=${{ env.gradle_version }}
+        run: |
+          DIR=$PWD 
+          cd /tmp 
+          gradle wrapper --gradle-version=${{ env.gradle_version }}
+          mv .gradle gradle gradlew $DIR
         if: ${{ env.gradle_version != '' }}
+        shell: bash
       - name: Wrap without version
-        run: gradle wrapper
+        run: |
+          DIR=$PWD 
+          cd /tmp 
+          gradle wrapper
+          mv .gradle gradle gradlew $DIR
         if: ${{ env.gradle_version == '' }}
+        shell: bash
       - name: Run commands
         run: ./gradlew ${{ env.gradle_commands }}
 
