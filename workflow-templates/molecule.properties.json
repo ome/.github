@@ -1,0 +1,5 @@
+{
+    "name": "Test and publish Ansible role",
+    "description": "Test all Molecule scenarios and publish to Galaxy on tag",
+    "iconName": "ansible"
+}
