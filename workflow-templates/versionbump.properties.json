@@ -1,0 +1,8 @@
+{
+    "name": "Update version and sha256",
+    "description": "Update version and sha256 of associated package using scc",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ]
+}
