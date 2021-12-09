@@ -13,7 +13,7 @@ like _these_:
 then you may already be using something from OME!  _(You can find out more about these images on <https://idr.openmicroscopy.org>.)_
 
 
-### Repositories you may be interested in: ###
+### Projects you may be interested in: ###
 * [OME Model](https://github.com/ome/ome-model) [![GitHub stars](https://badgen.net/github/stars/ome/ome-model)](https://GitHub.com/ome/ome-model/stargazers/)
   At the core of everything we do is the specification of an open data model, a vocabulary, that lets software components and users exchange bioimaging (meta)data.
 * [Bio-Formats](https://github.com/ome/bioformats) [![GitHub stars](https://badgen.net/github/stars/ome/bioformats)](https://GitHub.com/ome/bioformats/stargazers/)
@@ -25,5 +25,8 @@ then you may already be using something from OME!  _(You can find out more about
   - the OMERO.cli written using the [OMERO.py](https://github.com/ome/omero-py) [![GitHub stars](https://badgen.net/github/stars/ome/omero-py)](https://GitHub.com/ome/omero-py/stargazers/) API.
   - The are also [ansible roles](https://github.com/ome?q=ansible-role-omero&type=&language=&sort=) and [docker images](https://github.com/ome?q=docker&type=&language=&sort=)
     available to help you manage your OMERO server.
+* [OME-NGFF](https://ngff.openmicroscopy.org/latest), next-generation file formats. See:
+  - [ngff](https://github.com/ome/ngff) [![GitHub stars](https://badgen.net/github/stars/ome/ngff)](https://GitHub.com/ome/ngff/stargazers/) for the specification
+  - [ome-zarr-py](https://github.com/ome/ome-zarr-py) [![GitHub stars](https://badgen.net/github/stars/ome/ome-zarr-py)](https://GitHub.com/ome/ome-zarr-py/stargazers/) for the Python implementation
 
 Find more ways to get started under <https://www.openmicroscopy.org/explore>!
