@@ -7,7 +7,6 @@ producing open-source software and format standards for microscopy data. If you 
 like _these_:
 
 
-| Lots | of | Image |
 |:--------------:|:-----------------:|:------------:|
 | <img src="https://pbs.twimg.com/media/FD2H-BvWUAAt2Sw?format=jpg&name=large" width="100"> | <img src="https://pbs.twimg.com/media/E_0OLIxVEAo0ENk?format=jpg&name=4096x4096" width="100"> | <img src="https://pbs.twimg.com/media/E-MtTqtXEAYnvhv?format=png&name=900x900" width="100" > | 
 
