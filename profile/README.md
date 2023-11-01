@@ -23,7 +23,7 @@ then you may already be using something from OME!  _(You can find out more about
   - the [OMERO.web](https://github.com/ome/omero-web) [![GitHub stars](https://badgen.net/github/stars/ome/omero-web)](https://GitHub.com/ome/omero-web/stargazers/) client,
   - the [OMERO.insight](https://github.com/ome/omero-insight) [![GitHub stars](https://badgen.net/github/stars/ome/omero-insight)](https://GitHub.com/ome/omero-insight/stargazers/) Java client, or
   - the OMERO.cli written using the [OMERO.py](https://github.com/ome/omero-py) [![GitHub stars](https://badgen.net/github/stars/ome/omero-py)](https://GitHub.com/ome/omero-py/stargazers/) API.
-  - The are also [ansible roles](https://github.com/ome?q=ansible-role-omero&type=&language=&sort=) and [docker images](https://github.com/ome?q=docker&type=&language=&sort=)
+  - The are also [ansible roles](https://github.com/orgs/ome/repositories?q=ansible-role-omero&type=&language=&sort=) and [docker images](https://github.com/orgs/ome/repositories?q=docker&type=&language=&sort=)
     available to help you manage your OMERO server.
 * [OME-NGFF](https://ngff.openmicroscopy.org/latest), next-generation file formats. See:
   - [ngff](https://github.com/ome/ngff) [![GitHub stars](https://badgen.net/github/stars/ome/ngff)](https://GitHub.com/ome/ngff/stargazers/) for the specification
