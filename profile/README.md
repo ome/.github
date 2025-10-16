@@ -1,3 +1,6 @@
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/purple?icon=github)](https://github.com/Naereen/badges/)
+
 ##  <a href="https://www.openmicroscopy.org"><img alt="OME" src="https://raw.githubusercontent.com/sbesson/artwork/main/ome/ome-main-nav.svg" style="height:1em; vertical-align:bottom;"/></a> &nbsp; says 👋
 
 
